@@ -1,5 +1,8 @@
 <?php
 //Autor: Pablo Manuel Ramos Garrido <pablo@gmail.com>
+//
+require('HolaMundo.php');
 
-$nombre = isset($argv[1]) ? $argv[1] : "Mundo";
-@print "Hola Modificado, soy pablo y esta es la tarea presencial 5, {$nombre}\n";
+print "Introduce tu nombre:";
+$nombre = trim(fgets(STDIN));
+print new HolaMundo($nombre);
